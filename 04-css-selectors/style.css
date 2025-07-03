@@ -1,0 +1,43 @@
+ul li:nth-child(n + 4):nth-child(-n + 7) {
+  background-color: yellow;
+}
+h3 {
+  color: black;
+}
+p:nth-of-type(1) {
+  background-color: lightskyblue;
+}
+p:nth-of-type(3) {
+  background-color: green;
+}
+p:nth-of-type(4) {
+  color: red;
+}
+
+p:nth-of-type(5) {
+  background-color: green;
+}
+
+.link1 {
+  color: crimson;
+}
+
+.link2 {
+  color: teal;
+  background-color: yellow;
+}
+
+h1 {
+  color: blue;
+}
+h2 {
+  background-color: blue;
+  color: aliceblue;
+}
+p.task2 {
+  background: none;
+}
+
+.highlight {
+  font-size: xx-large;
+}
