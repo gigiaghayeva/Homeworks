@@ -65,4 +65,5 @@ button{
    .social2:hover,
    .social3:hover{
     background-color: rgb(208, 72, 194);
+    border:none;
    }
