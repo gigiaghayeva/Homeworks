@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.one img{
+    width: 150px;
+    height: 150px;
+}
+
+.one{
+    background-color: blanchedalmond;
+    text-align: center;
+    
+}
+h1{
+    text-decoration: underline;
+}
+p1{
+    text-align: left;
+
+}
