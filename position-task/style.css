@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.photo img {
+  width: 100%;
+}
+.photo {
+  position: relative;
+}
+.card .photo span {
+  position: absolute;
+  bottom: 10%;
+  background-color: aliceblue;
+  left: 0px;
+  padding: 10px;
+}
+
+.card h2 {
+  margin: 20px 0;
+}
+.data{
+    color: gray
+    ;
+}

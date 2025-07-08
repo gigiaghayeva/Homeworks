@@ -1,90 +1,75 @@
-
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.header{
-        width: 100%;
-    display: inline-block;
-    
+.header {
+  width: 100%;
+  display: inline-block;
 }
 nav ul li a {
   text-decoration: none;
 }
 
-
-nav ul{
+nav ul {
   position: absolute;
-  margin-top: 30px;
+  top: 30px;
   left: 600px;
-       display: inline-block;
- 
-  
-
+  display: inline-block;
 }
-nav ul li{
-    display: inline-block;
-    margin-left: 100px;
-    
-
-    
-
-}
-nav ul li:hover{
-    background-color: #ead787;
-    border-radius: 10px;
-    padding: 5px 15px;
-}
-img{
-    width: 120px;
-    height: 80px;
-}
-.section2{
-    background-image: url(https://lh3.googleusercontent.com/drive-storage/AJQWtBOM9QPjeYHv2lwC37O7PgHiwD6cReuKd0y3ekzL3Mt9rR-Dh-TRi-VwejG2VsxWBXjrzZhfUEqovVyVjbk83Dl8duweL_g1Avu-31rtARma_ZQ=w935-h946?auditContext=forDisplay);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    
-   
-}
-p{
-    width: 600px;
-     font-family: 'Tilt Neon', cursive;
-     font-style: italic;
-
-}
-h3{
-    padding-bottom: 20px;
-         font-family: 'Tilt Neon', cursive;
-         font-size: 24px;
-text-shadow: 2px 2px 5px #e4c032;
-}
-.texts{
-    padding-top:300px;
-    padding-left: 30px;
-}
-button{
-    margin-top: 20px;
-    padding: 10px 20px;
-}
-button:hover{
-    background-color: #6bd29b;
-    border: none;
-}
-.section3{
-    background-image: url(https://lh3.googleusercontent.com/drive-storage/AJQWtBMBfYCI-VwZb4y0TRrJBMZEh1eIfAg81m4vKrcphCqNE3NpOYnuVZUCb1pbvO09QUC7gtzS2vamYlLo713qFtutYg24mRIb9CvIVOyXcq30WEo=w935-h931?auditContext=forDisplay);
-    background-position: center;
-    background-size: cover;
-        height: 100vh;
-        background-attachment: fixed;
-  
-  
+nav ul li {
+  display: inline-block;
+  margin-left: 100px;
+  padding: 5px 15px;
 }
 
+nav ul li:hover {
+  background-color: #ead787;
+  border-radius: 10px;
 
+}
+img {
+  width: 120px;
+  height: 80px;
+}
+.section2 {
+  background-image: url(https://lh3.googleusercontent.com/drive-storage/AJQWtBOM9QPjeYHv2lwC37O7PgHiwD6cReuKd0y3ekzL3Mt9rR-Dh-TRi-VwejG2VsxWBXjrzZhfUEqovVyVjbk83Dl8duweL_g1Avu-31rtARma_ZQ=w935-h946?auditContext=forDisplay);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+p {
+  width: 600px;
+  font-family: "Tilt Neon", cursive;
+  font-style: italic;
+}
+h3 {
+  padding-bottom: 20px;
+  font-family: "Tilt Neon", cursive;
+  font-size: 24px;
+  text-shadow: 2px 2px 5px #e4c032;
+}
+.texts {
+  padding-top: 300px;
+  padding-left: 30px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+button:hover {
+  background-color: #6bd29b;
+  border: none;
+}
+.section3 {
+  background-image: url(https://lh3.googleusercontent.com/drive-storage/AJQWtBMBfYCI-VwZb4y0TRrJBMZEh1eIfAg81m4vKrcphCqNE3NpOYnuVZUCb1pbvO09QUC7gtzS2vamYlLo713qFtutYg24mRIb9CvIVOyXcq30WEo=w935-h931?auditContext=forDisplay);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
 
 .footer {
   background-color: #2e2e2e;
@@ -118,15 +103,12 @@ button:hover{
 .footer-column ul li a {
   text-decoration: none;
   color: #ccc;
-
 }
-.footer-column ul li a:hover{
-    color:white ;
+.footer-column ul li a:hover {
+  color: white;
 }
 
 .social-icons li {
- display: block;
+  display: inline-block;
   margin-right: 10px;
 }
-
-
