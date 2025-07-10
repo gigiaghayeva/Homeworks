@@ -1,0 +1,29 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "keyboard keyboard"
+    "sofa workmedia"
+    "done handp";
+    height: 100vh;
+    gap: 2rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.keyboard { grid-area: keyboard; }
+
+.sofa { grid-area: sofa; }
+
+.workmedia { grid-area: workmedia; }
+
+.done { grid-area: done; }
+
+.handp { grid-area: handp; }
+
+.container img{
+    width: 100%;
+    height: 100%;
+
+}
