@@ -101,12 +101,17 @@ header .navbar .menu .signup-btn {
   font-size: 24px;
   font-weight: 400;
 }
+#banner .banner-main .banner-right {
+  background-color: #3b3b3b;
+  border-radius: 22px;
+}
 #banner .banner-main .banner-right img {
   width: 510px;
   height: 401px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 #banner .banner-main .banner-right .image-text-header {
   color: #ffffff;
@@ -116,23 +121,22 @@ header .navbar .menu .signup-btn {
   width: 470px;
   height: 31px;
 }
-#banner .banner-main .banner-right .banner-author {
-  margin-top: 15px;
-  display: flex;
-  gap: 15px;
+#banner .banner-main .banner-right .banner-author .author-author {
+  padding: 15px;
 }
-#banner .banner-main .banner-right .banner-author .image-icon {
+#banner .banner-main .banner-right .banner-author .author-author .image-icon {
   width: 24px;
   height: 24px;
-  margin-top: 25px;
 }
-#banner .banner-main .banner-right .banner-author .icon-text {
+#banner .banner-main .banner-right .banner-author .author-author .icon-text {
   color: #ffffff;
   font-family: work sans;
   font-weight: 400;
-  width: 434px;
   height: 22px;
   line-height: 140%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #trending {
@@ -193,31 +197,30 @@ header .navbar .menu .signup-btn {
   color: #ffffff;
 }
 
-#headline-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+#artist-card-row {
+  margin: 40px 0;
 }
-#headline-section .content-container .top-creators {
+#artist-card-row .content-container .top-creators {
   color: #ffffff;
   font-size: 38px;
   font-weight: 600;
   line-height: 120%;
   font-family: work sans;
 }
-#headline-section .content-container .headline {
+#artist-card-row .content-container .headline {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
-#headline-section .content-container .headline .checkout-text {
+#artist-card-row .content-container .headline .checkout-text {
   font-family: work sans;
   font-size: 22px;
   font-weight: 400;
   line-height: 160%;
   color: #ffffff;
 }
-#headline-section .content-container .headline .rankings {
+#artist-card-row .content-container .headline .rankings {
   font-family: work sans;
   border: 2px solid #a259ff;
   border-radius: 20px;
@@ -226,10 +229,6 @@ header .navbar .menu .signup-btn {
   color: #ffffff;
   line-height: 140%;
   font-weight: 600;
-}
-
-#artist-card-row {
-  margin-top: 60px;
 }
 #artist-card-row .artist-container .card-main {
   display: flex;
@@ -280,20 +279,60 @@ header .navbar .menu .signup-btn {
   color: #858584;
 }
 
-.highlight {
+#categories {
+  margin-top: 80px;
+}
+#categories .browse-category {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+#categories .categories {
   display: flex;
-  justify-content: center;
-  width: 1280px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+#categories .categories .category-items {
+  background-color: #3b3b3b;
+  border-radius: 20px;
+}
+#categories .categories .category-items .category-text {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  padding: 20px 55px;
+  color: #ffffff;
+}
+
+.highlight img {
+  width: 100%;
+  height: 640px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #infocards {
-  margin-top: 40px;
+  margin-top: 80px;
+}
+#infocards .how-it-works {
+  font-size: 38px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+#infocards .find-out-how {
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
 }
 #infocards .info-card-sec {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
   gap: 30px;
+  margin-top: 40px;
 }
 #infocards .info-card-sec .info-card-box {
   width: 330px;
@@ -318,6 +357,7 @@ header .navbar .menu .signup-btn {
   color: #ffffff;
   font-weight: 400;
   line-height: 140%;
+  text-align: center;
 }
 #infocards .info-card-sec .info-card-box .info-card-box2 img {
   width: 208px;
