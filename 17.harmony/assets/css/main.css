@@ -1,0 +1,140 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cards .cards-body {
+  text-align: center;
+}
+#cards .cards-body .cards-category {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  line-height: 34px;
+}
+#cards .cards-body .cards-category p {
+  cursor: pointer;
+}
+#cards .cards-body .cards-category .active {
+  color: #121212;
+  font-weight: 600;
+  text-decoration: underline;
+}
+#cards .cards-body .card-images {
+  font-family: "space";
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 55px;
+}
+#cards .cards-body .card-images .card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+}
+#cards .cards-body .card-images .card .card-image {
+  width: 310px;
+  height: 410px;
+}
+#cards .cards-body .card-images .card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#cards .cards-body .card-images .card .card-content {
+  color: #121212;
+  line-height: 28px;
+}
+#cards .cards-body .card-images .card .card-content .card-title {
+  font-size: 16px;
+}
+#cards .cards-body .card-images .card .card-content .card-price {
+  font-size: 14px;
+}
+#cards .cards-body .card-images .card .card-content .card-price span {
+  color: #a7a7a7;
+  text-decoration: line-through;
+}
+#cards .cards-body .cards-btn {
+  margin: 10px 0;
+  padding: 10px 25px;
+  background-color: #121212;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-content {
+  gap: 13px;
+  margin-top: 15px;
+}
+.banner-content .banner-img {
+  width: 550px;
+  height: 524px;
+}
+.banner-content .banner-img .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content .banner-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-content .banner-img .banner-title {
+  font-size: 34px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.banner-content .banner-img .description {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+#newsletter .newsletter-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+#newsletter .newsletter-content .our-newsletter {
+  font-size: 40px;
+  font-weight: 500;
+}
+#newsletter .newsletter-content .big-discounts {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#info .information {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#info .information .info-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+#info .information .info-desc {
+  font-size: 14px;
+  font-size: 400;
+  color: #807E7E;
+}/*# sourceMappingURL=main.css.map */
