@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2b2b2b;
+  font-family: Work Sans;
+}
+
+header {
+  padding: 20px 0;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 140%;
+
+    .logo {
+      img {
+        color: #ffffff;
+      }
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      text-align: center;
+
+      ul {
+        display: flex;
+        gap: 25px;
+
+        li {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+          }
+        }
+      }
+      .signup-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        color: #ffffff;
+        padding: 0 40px;
+        background-color: #a259ff;
+        border: none;
+      }
+    }
+  }
+}
+
+#marketplace-creators {
+  .marketplace-headline {
+    color: #ffffff;
+    margin: 80px 0;
+    .top-creators {
+      font-size: 51px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .checkout-text {
+      font-size: 22px;
+    }
+  }
+}
+
+#date {
+  .date {
+    color: #858584;
+    display: flex;
+    justify-content: space-between;
+    .date-text {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 140%;
+    }
+    .date-text:nth-child(1) {
+      color: #ffffff;
+    }
+  }
+}
+
+#artist-list {
+  margin: 30px 0;
+
+  .artist-list {
+    display: flex;
+    justify-content: space-between;
+        padding: 15px 80px 15px 15px;
+
+    line-height: 140%;
+    border: 1px solid;
+    border-radius: 20px;
+
+    color: #858584;
+    .art-left {
+      display: flex;
+      gap: 50px;
+    }
+    .art-right {
+      display: flex;
+      gap: 80px;
+    }
+  }
+}
+
+#artist-name-list {
+  .artist-listt {
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 15px 80px 15px 15px;
+    background-color: #3b3b3b;
+
+    .artist-list-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      .list-no {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #858584;
+        background-color: #2b2b2b;
+        border-radius: 20px;
+      }
+
+      .name {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+
+    .artist-list-right {
+      display: flex;
+      align-items: center;
+      gap: 110px;
+
+      .green {
+        color: #00ac4f;
+      }
+      .sold {
+        color: #ffffff;
+      }
+      .volume {
+        color: #ffffff;
+      }
+    }
+  }
+}

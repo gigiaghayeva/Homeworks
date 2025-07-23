@@ -1,0 +1,78 @@
+
+
+
+
+
+
+
+#login{
+   margin-top: 40px;
+
+    .login{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        
+
+        .login-left{
+            img{
+                width: 610px;
+                height: 691px;
+            }
+        }
+        .login-right{
+            display: flex;
+            align-items: center;
+           
+              
+            .login-form{
+                 display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                 
+                
+              
+                .login-headline{
+                    color: #ffffff;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .create-account{
+                        font-size: 51px;
+                        font-weight: 600;
+
+                    }
+                    .welcome{
+                        font-size: 22px;
+
+                    }
+                }
+
+                .login-input{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    input{
+                     padding: 16px 20px;
+                     border-radius: 20px;
+                     border: none;
+                     
+
+                    }
+                    .login-btn{
+                        padding: 16px 20px;
+                        border-radius: 20px;
+                        background-color: #A259FF;
+                        border: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+footer{
+    margin-top: 40px;
+}
