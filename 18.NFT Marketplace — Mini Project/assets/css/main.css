@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -72,6 +77,9 @@ header .navbar .menu .signup-btn {
   font-size: 22px;
 }
 
+#date .burger-date {
+  display: none;
+}
 #date .date {
   color: #858584;
   display: flex;
@@ -151,6 +159,140 @@ header .navbar .menu .signup-btn {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  header .navbar .menu {
+    display: none;
+  }
+  header .navbar .burger-menu {
+    display: block;
+    font-size: 36px;
+  }
+  #marketplace-creators .marketplace-headline .top-creators {
+    margin-top: -50px;
+    font-size: 28px;
+  }
+  #marketplace-creators .marketplace-headline .checkout-text {
+    font-size: 18px;
+  }
+  #date {
+    margin-top: -40px;
+  }
+  #date .date {
+    display: none;
+  }
+  #date .date .date-text:nth-child(1) {
+    color: #ffffff;
+  }
+  #date .burger-date {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #858584;
+    padding: 0 20px;
+  }
+  #artist-list .artist-list .art-right {
+    margin-right: -50px;
+  }
+  #artist-list .artist-list .art-right p {
+    display: none;
+  }
+  #artist-list .artist-list .art-right p:last-child {
+    display: block;
+  }
+  #artist-name-list .artist-listt {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 15px 80px 15px 15px;
+    background-color: #3b3b3b;
+  }
+  #artist-name-list .artist-listt .artist-list-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  #artist-name-list .artist-listt .artist-list-left .list-no {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #858584;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+  }
+  #artist-name-list .artist-listt .artist-list-left .name {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #artist-name-list .artist-listt .artist-list-right {
+    margin-right: -50px;
+  }
+  #artist-name-list .artist-listt .artist-list-right p {
+    display: none;
+  }
+  #artist-name-list .artist-listt .artist-list-right p:last-child {
+    display: block;
+  }
+  #footer-area .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer-area .footer-top .left .footer-text-1 {
+    color: #858584;
+    padding: 15px 0;
+  }
+  #footer-area .footer-top .left .footer-text-2 {
+    color: #858584;
+  }
+  #footer-area .center {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #footer-area .center .footer-header {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  #footer-area .center ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #footer-area .center ul li {
+    list-style: none;
+    color: #858584;
+  }
+  #footer-area .right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #footer-area .subscribe-form {
+    border-radius: 20px;
+  }
+  #footer-area .subscribe-form .subscribe-btn {
+    padding: 20px 50px;
+    background-color: #a259ff;
+    color: #ffffff;
+    border: none;
+    margin-left: -85px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  #footer-area .subscribe-form .subscribe-btn .fa-regular {
+    padding: 0 10px;
+  }
+  #footer-area .subscribe-form input {
+    border-radius: 20px;
+    padding: 20px 50px;
+    border: none;
+  }
+}
 #login {
   margin-top: 40px;
 }
@@ -198,7 +340,7 @@ header .navbar .menu .signup-btn {
 #login .login .login-right .login-form .login-input .login-btn {
   padding: 16px 20px;
   border-radius: 20px;
-  background-color: #A259FF;
+  background-color: #a259ff;
   border: none;
   color: #ffffff;
 }
@@ -207,6 +349,44 @@ footer {
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 768px) {
+  #login {
+    display: flex;
+  }
+  #login .login {
+    flex-direction: column !important;
+  }
+  #login .login .login-left img {
+    width: 375px;
+    height: 232px;
+  }
+  #login .login .login-right {
+    display: flex;
+    justify-content: center;
+  }
+  #login .login .login-right .login-form .login-headline {
+    align-items: center;
+    text-align: center;
+    width: 315px;
+  }
+  #login .login .login-right .login-form .login-headline .create-account {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  #login .login .login-right .login-form .login-headline .welcome {
+    font-size: 16px;
+  }
+  #login .login .login-right .login-form .login-input {
+    display: flex;
+    align-items: center;
+  }
+  #login .login .login-right .login-form .login-input input {
+    width: 315px;
+  }
+  #login .login .login-right .login-form .login-input .login-btn {
+    width: 315px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -219,9 +399,12 @@ body {
 }
 
 header {
-  padding: 20px 0;
+  padding: 20px 10px;
+  width: 100%;
 }
 header .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -268,7 +451,6 @@ header .navbar .burger-menu {
 }
 
 #banner {
-  border-top: 2px solid #a259ff;
   padding: 80px 0;
 }
 #banner .banner-main {
@@ -299,6 +481,9 @@ header .navbar .burger-menu {
   border-radius: 20px;
   border: none;
   margin: 30px 0;
+}
+#banner .banner-main .banner-left .banner-btn .fa-solid {
+  margin-right: 10px;
 }
 #banner .banner-main .banner-left .header-rate {
   display: flex;
@@ -397,6 +582,15 @@ header .navbar .burger-menu {
   width: 100px;
   height: 100px;
   border-radius: 20px;
+}
+#trending .trending-images .main-img .row-images .row-button {
+  background-color: #a259ff;
+  padding: 36px 16px;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
 }
 #trending .trending-images .main-img .trending-h1 {
   color: #ffffff;
@@ -733,7 +927,7 @@ header .navbar .burger-menu {
   }
   header .navbar .burger-menu {
     display: block;
-    font-size: 36px;
+    font-size: 32px;
   }
   #banner .banner-main {
     flex-direction: column;

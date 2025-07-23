@@ -1,78 +1,134 @@
+#login {
+  margin-top: 40px;
 
+  .login {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 
-
-
-
-
-
-#login{
-   margin-top: 40px;
-
-    .login{
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        
-
-        .login-left{
-            img{
-                width: 610px;
-                height: 691px;
-            }
-        }
-        .login-right{
-            display: flex;
-            align-items: center;
-           
-              
-            .login-form{
-                 display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                 
-                
-              
-                .login-headline{
-                    color: #ffffff;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                    .create-account{
-                        font-size: 51px;
-                        font-weight: 600;
-
-                    }
-                    .welcome{
-                        font-size: 22px;
-
-                    }
-                }
-
-                .login-input{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                    input{
-                     padding: 16px 20px;
-                     border-radius: 20px;
-                     border: none;
-                     
-
-                    }
-                    .login-btn{
-                        padding: 16px 20px;
-                        border-radius: 20px;
-                        background-color: #A259FF;
-                        border: none;
-                        color: #ffffff;
-                    }
-                }
-            }
-        }
+    .login-left {
+      img {
+        width: 610px;
+        height: 691px;
+      }
     }
+    .login-right {
+      display: flex;
+      align-items: center;
 
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .login-headline {
+          color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .create-account {
+            font-size: 51px;
+            font-weight: 600;
+          }
+          .welcome {
+            font-size: 22px;
+          }
+        }
+
+        .login-input {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          input {
+            padding: 16px 20px;
+            border-radius: 20px;
+            border: none;
+          }
+          .login-btn {
+            padding: 16px 20px;
+            border-radius: 20px;
+            background-color: #a259ff;
+            border: none;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
 }
 
-footer{
-    margin-top: 40px;
+footer {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+
+ 
+
+
+
+  
+  #login {
+    display: flex;
+
+    .login {
+      flex-direction: column !important;
+
+      .login-left {
+        
+        
+        
+        img {
+          width: 375px;
+        height: 232px;
+     
+      
+
+          
+        }
+      }
+      .login-right {
+        display: flex;
+        justify-content: center;
+       
+
+        .login-form {
+
+          .login-headline {
+            align-items: center;
+            text-align: center;
+            width: 315px;
+            .create-account {
+              font-size: 38px;
+              font-weight: 600;
+            }
+            .welcome {
+              font-size: 16px;
+              
+            }
+          }
+
+          .login-input {
+              display: flex;
+        align-items: center;
+               
+            
+            input {
+                          width: 315px;
+
+             
+             
+          
+           
+           
+              
+            }
+            .login-btn {
+             width: 315px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
