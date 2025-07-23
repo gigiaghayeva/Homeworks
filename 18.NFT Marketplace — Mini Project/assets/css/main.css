@@ -251,15 +251,20 @@ header .navbar .menu ul li a {
   text-decoration: none;
   color: #ffffff;
 }
-header .navbar .menu .signup-btn {
+header .navbar .menu .sign-button {
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #a259ff;
   display: flex;
   align-items: center;
   gap: 10px;
-  border-radius: 10px;
-  color: #ffffff;
-  padding: 0 40px;
-  background-color: #a259ff;
+  text-decoration: none;
+}
+header .navbar .menu .sign-button .signup-btn {
   border: none;
+}
+header .navbar .burger-menu {
+  display: none;
 }
 
 #banner {
@@ -311,11 +316,12 @@ header .navbar .menu .signup-btn {
   font-weight: 400;
 }
 #banner .banner-main .banner-right {
+  width: 510px;
   background-color: #3b3b3b;
   border-radius: 22px;
 }
 #banner .banner-main .banner-right img {
-  width: 510px;
+  width: 100%;
   height: 401px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -719,4 +725,156 @@ header .navbar .menu .signup-btn {
 #footer-area .last-part {
   color: #858584;
   padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar .menu {
+    display: none;
+  }
+  header .navbar .burger-menu {
+    display: block;
+    font-size: 36px;
+  }
+  #banner .banner-main {
+    flex-direction: column;
+  }
+  #banner .banner-main .banner-left .h-1 {
+    font-size: 47px;
+  }
+  #banner .banner-main .banner-left .banner-text {
+    margin-top: -80px;
+  }
+  #trending .trending-title .headline-h1 {
+    display: flex;
+    justify-content: center;
+  }
+  #trending .trending-title .headline-text {
+    display: flex;
+    justify-content: center;
+  }
+  #trending .trending-images {
+    display: flex;
+    flex-direction: column;
+  }
+  .highlight img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  #infocards .how-it-works {
+    display: flex;
+    justify-content: center;
+  }
+  #infocards .find-out-how {
+    display: flex;
+    justify-content: center;
+  }
+  #infocards .info-card-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #infocards .info-card-sec .info-card-box {
+    width: 330px;
+    height: 439px;
+    border-radius: 20px;
+    background-color: #3b3b3b;
+  }
+  #infocards .info-card-sec .info-card-box .info-card-box2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  #infocards .info-card-sec .info-card-box .info-card-box2 .setup-your-wallet {
+    font-weight: 600;
+    font-size: 22px;
+    color: #ffffff;
+  }
+  #infocards .info-card-sec .info-card-box .info-card-box2 .setup-your-wallet-text {
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+  }
+  #infocards .info-card-sec .info-card-box .info-card-box2 img {
+    width: 208px;
+    height: 208px;
+  }
+  #subscribe-widget .subscribe-content {
+    display: flex;
+    flex-direction: column;
+  }
+  #subscribe-widget .subscribe-content img {
+    width: 425px;
+    height: 310px;
+    margin-bottom: 20px;
+  }
+  #footer-area .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer-area .footer-top .left .footer-text-1 {
+    color: #858584;
+    padding: 15px 0;
+  }
+  #footer-area .footer-top .left .footer-text-2 {
+    color: #858584;
+  }
+  #footer-area .center {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #footer-area .center .footer-header {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  #footer-area .center ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #footer-area .center ul li {
+    list-style: none;
+    color: #858584;
+  }
+  #footer-area .right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #footer-area .subscribe-form {
+    border-radius: 20px;
+  }
+  #footer-area .subscribe-form .subscribe-btn {
+    padding: 20px 50px;
+    background-color: #a259ff;
+    color: #ffffff;
+    border: none;
+    margin-left: -85px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  #footer-area .subscribe-form .subscribe-btn .fa-regular {
+    padding: 0 10px;
+  }
+  #footer-area .subscribe-form input {
+    border-radius: 20px;
+    padding: 20px 50px;
+    border: none;
+  }
+  .line {
+    height: 1px;
+    background-color: #858584;
+    width: 100%;
+  }
+  .last-part {
+    color: #858584;
+    padding-top: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

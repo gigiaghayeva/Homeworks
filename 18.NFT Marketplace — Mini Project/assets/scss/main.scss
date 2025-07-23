@@ -49,16 +49,27 @@ header {
           }
         }
       }
-      .signup-btn {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+      .sign-button{
         border-radius: 10px;
-        color: #ffffff;
-        padding: 0 40px;
-        background-color: #a259ff;
-        border: none;
+          color: #ffffff;
+          // padding: 0 40px;
+          background-color: #a259ff;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+
+        .signup-btn {
+          
+          border: none;
+        }
       }
+       
+      
+    }
+
+    .burger-menu{
+      display: none;
     }
   }
 }
@@ -69,7 +80,6 @@ header {
 
   .banner-main {
     display: flex;
-
     gap: 30px;
 
     .banner-left {
@@ -116,11 +126,12 @@ header {
     }
 
     .banner-right {
+      width: 510px;
       background-color: #3b3b3b;
       border-radius: 22px;
 
       img {
-        width: 510px;
+        width: 100%;
         height: 401px;
         object-fit: cover;
         border-top-right-radius: 20px;
@@ -579,3 +590,216 @@ header {
     padding-top: 10px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+  .navbar {
+     .menu {
+      display: none;
+       
+    }
+    .burger-menu{
+      display: block;
+      font-size: 36px;
+    }
+  }
+}
+
+  #banner {
+   .banner-main {
+    flex-direction: column;
+    .banner-left {
+      .h-1 {
+        font-size: 47px; 
+      }
+      .banner-text {
+      margin-top: -80px;
+      }
+    }
+  }
+}
+
+#trending {
+  .trending-title {
+   
+    .headline-h1 {
+     display: flex;
+   justify-content: center;
+    }
+    .headline-text {
+      display: flex;
+   justify-content: center;
+    }
+  }
+  .trending-images {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.highlight {
+  img {
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+  }
+}
+
+
+#infocards {
+  .how-it-works {
+    display: flex;
+    justify-content: center;
+  }
+  .find-out-how {
+     display: flex;
+    justify-content: center;
+  }
+
+
+  .info-card-sec {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+    .info-card-box {
+      width: 330px;
+      height: 439px;
+      border-radius: 20px;
+      background-color: #3b3b3b;
+
+      .info-card-box2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+        .setup-your-wallet {
+          font-weight: 600;
+          font-size: 22px;
+          color: #ffffff;
+        }
+
+        .setup-your-wallet-text {
+          color: #ffffff;
+          font-weight: 400;
+          line-height: 140%;
+          text-align: center;
+        }
+
+        img {
+          width: 208px;
+          height: 208px;
+        }
+      }
+    }
+  }
+}
+
+#subscribe-widget { 
+  .subscribe-content {
+    display: flex;
+    flex-direction: column;
+    img {    
+      width: 425px;
+      height: 310px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+#footer-area {
+
+  .footer-top {
+   display: flex;
+ flex-direction: column;
+ 
+
+    .left {
+      .footer-text-1 {
+        color: #858584;
+        padding: 15px 0;
+      }
+
+      .footer-text-2 {
+        color: #858584;
+      }
+
+      
+      }
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .footer-header {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        li {
+          list-style: none;
+          color: #858584;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+     
+     
+    }
+    .subscribe-form {
+      border-radius: 20px;
+
+      // width: 425px;
+
+      .subscribe-btn {
+        padding: 20px 50px;
+        background-color: #a259ff;
+        color: #ffffff;
+        border: none;
+        margin-left: -85px;
+        border-radius: 20px;
+        font-weight: 600;
+        .fa-regular {
+          padding: 0 10px;
+        }
+      }
+      input {
+        border-radius: 20px;
+        padding: 20px 50px;
+        border: none;
+      }
+    }
+  }
+  .line {
+    height: 1px;
+    background-color: #858584;
+    width: 100%;
+  }
+  .last-part{
+    color: #858584;
+    padding-top: 10px;
+  }
+}
+
+
+
+
+     
+
+ 
+
+
+
