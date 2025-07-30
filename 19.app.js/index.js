@@ -14,15 +14,7 @@ console.log("The largest number is:", max);
 
 
 // task 2 // chat gpt
-function doubleArray(arr) {
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    result.push(arr[i] * 2);
-  }
-  return result;
-}
 
-console.log(doubleArray([1, 2, 3]));  // [2, 4, 6]
 
 
 
@@ -54,3 +46,22 @@ const ferrari=Math.max(...cars);
 const toyota=Math.min(...cars);
 console.log("Ferrari is the fastest:", ferrari);
 console.log("Toyota is less speed than Ferrari", toyota);
+
+
+
+let fruits =["apple", "banana", "orange", "kiwi"];
+//fruits.push("kiwi");
+//fruits.pop();
+//fruits.unshift("mango");
+//fruits.shift()
+
+let numOfFruits= fruits.length;
+let index=fruits.indexOf("orange");
+console.log(index);
+
+
+
+
+
+
+
