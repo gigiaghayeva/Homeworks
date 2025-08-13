@@ -266,6 +266,7 @@
 // let max = number[0]; // ilk ədədi ən böyük kimi götürürük
 
 // for (let i = 1; i < number.length; i++) {
+
 //     if (number[i] > max) {
 //         max = number[i];
 //     }
