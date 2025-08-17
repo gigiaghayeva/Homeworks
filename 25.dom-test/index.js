@@ -1,31 +1,22 @@
+const click =document.getElementById("openBtn")
+const close =document.querySelector(".close")
+const modal = document.getElementById("myModal")
 
-const element = document.getElementById("demo")
-element.textContent="Salam Dunya"
-
-
-
-const para = document.getElementsByClassName('paragraph');
-
-Array.from(para).forEach(item=>{
-    item.textContent ="Bu metn yenilendi"
+click.addEventListener("click",()=>{
+modal.style.display="block"
+})
+close.addEventListener("click", ()=> {
+    modal.style.display="none";
 
 })
 
-console.log(para)
+window.addEventListener("click", (e)=> {
 
 
-const container =  document.getElementById("container")
-
-container.innerHTML=`
-<p>lorem17</p>
-<p>lorem17</p>
-<p>lorem17</p>
-
-`
-const list =document.querySelector(`.list`)
-const li =document.createElement(`li`)
+    if(e.target === modal){
+        modal.style.display = "none";
+    
+    }
 
 
-
-li.textContent = 'New list item';
-list.appendChild(li)
+})

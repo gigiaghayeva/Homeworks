@@ -1,8 +1,8 @@
 //1cache dom elements
 
 const resultEl =document.getElementById("result");
-const v1El =document.getElementById("value1");
-const v2El =document.getElementById("value2");
+const v1El =document.querySelector(".value1");
+const v2El =document.querySelector(".value2");
  
 
 //2helpers
@@ -24,6 +24,8 @@ const v2El =document.getElementById("value2");
         show("Enter numbers!")
         return;
     }
+    show()
+
     let out;
 
     switch(operation){
@@ -62,8 +64,8 @@ const v2El =document.getElementById("value2");
   v1El.focus();
 }
 
-document.getElementById('addition').addEventListener('click', () => calculate('add'));
-document.getElementById('substract').addEventListener('click', () => calculate('sub'));
-document.getElementById('multiply').addEventListener('click', () => calculate('mul'));
-document.getElementById('division').addEventListener('click', () => calculate('div'));
-document.getElementById('reset').addEventListener('click', resetCalc);
+document.querySelector('.addition').addEventListener('click', () => calculate('add'));
+document.querySelector('.substract').addEventListener('click', () => calculate('sub'));
+document.querySelector('.multiply').addEventListener('click', () => calculate('mul'));
+document.querySelector('.division').addEventListener('click', () => calculate('div'));
+document.querySelector('.reset').addEventListener('click', resetCalc);
