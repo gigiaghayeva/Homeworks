@@ -52,7 +52,7 @@ const updateTasksList=()=>{
         </div>
         <div class="icons">
         <img src="edit.jpg" onclick="editTask(${index})"/>
-                <img src="bin.webp" onclick="deleteTask(${index})"/>
+                <img src="bin.webp" onclick="deleteTask(${index})" />
 
 
         </div>
@@ -70,3 +70,28 @@ document.getElementById("newTask").addEventListener("click", function(e){
     addTask();
 })
 
+
+const addBtn= document.querySelector("#newTask");
+
+addBtn.addEventListener("click", ()=> {
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+    console.log("Tasks saved", tasks)
+})
+
+window.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("tasks");
+  if (saved) {
+    tasks = JSON.parse(saved);
+    updateTasksList();
+    updateStats();
+  }
+});
+
+
+const deleteBtn = document.querySelector("#deleteBtn")
+deleteBtn.addEventListener("click", ()=>{
+    localStorage.removeItem("tasks", JSON.stringify(tasks))
+    console.log("Tasks deleted", tasks)
+})
+
+// 
