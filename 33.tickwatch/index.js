@@ -11,6 +11,8 @@ clearBtn.addEventListener("click", clear)
  let count =0;
 
  function start(){
+   startBtn.disabled=true;
+    stopBtn.disabled = false;
     interval=setInterval(()=>{
         count++
         display.textContent=count
@@ -18,10 +20,14 @@ clearBtn.addEventListener("click", clear)
     },100)
  }
  function stop(){
+    stopBtn.disabled = true;  
+  startBtn.disabled = false;
     clearInterval(interval)
     interval=null
  }
  function clear(){
+    startBtn.disabled = false;
+  stopBtn.disabled = true;
     clearInterval(interval)
     count=0;
     display.textContent=count
