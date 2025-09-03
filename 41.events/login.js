@@ -3,7 +3,12 @@ const BASE_URL = "http://localhost:8000/users";
 const loginForm = document.querySelector("#lgn-form");
 const newEmail = document.querySelector(".email");
 const newPassword = document.querySelector("#password");
-const msgEl = document.querySelector("#msg"); // ✅ make sure you have <p id="msg"></p> in HTML
+const msgEl = document.querySelector("#msg"); 
+
+const loginBtn=document.querySelector(".login-btn")
+
+
+
 
 loginForm.addEventListener("submit", onLogin);
 
@@ -25,7 +30,7 @@ async function onLogin(e) {
     }
 
     const user = users[0];
-    // localStorage.setItem("currentUser", JSON.stringify(user)); // uncomment if you want auto-login
+    localStorage.setItem("currentUser", JSON.stringify(user)); // uncomment if you want auto-login
 
     msgEl.style.color = "green";
     msgEl.textContent = "Login successful! Redirecting...";

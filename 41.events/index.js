@@ -2,6 +2,26 @@ const BASE_URL = "http://localhost:8000/events";
 
 const newCards=document.querySelector("#cards")
 const eventBtn=document.querySelector(".add")
+const loginBtn=document.querySelector(".login-btn")
+
+const currentUser=JSON.parse(localStorage.getItem("currentUser"));
+
+
+if(currentUser){
+  loginBtn.outerHTML=`
+  <span class ="navbar-text me-2">Hello,${currentUser.fullName}</span>
+  <a href="#" class ="btn btn-danger logout-btn">Logout</a>
+  `;
+
+  document.querySelector(".logout-btn").addEventListener("click", (e)=>{
+e.preventDefault()
+    localStorage.removeItem("currentUser");
+    window.location.reload();
+  })
+  
+  
+};
+
 
 
   eventBtn.addEventListener("click", (e) => {
@@ -46,7 +66,7 @@ async function getEvents(){
     
      });
     } catch (error) {
-            cards.innerHTML = `<div class="alert alert-danger">Could not load events</div>`;
+            newCards.innerHTML = `<div class="alert alert-danger">Could not load events</div>`;
 
     }
 }
