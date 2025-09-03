@@ -1,0 +1,224 @@
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --ink:#0a1a24;
+  --muted:#6b7280;
+  --brand:#b31c1c;
+  --radius:14px;
+  --shadow:0 10px 18px rgba(12,17,29,.12);
+  --ring: 0 0 0 3px rgba(59,130,246,.18);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, Helvetica, sans-serif;
+  line-height:1.5;
+}
+
+.wrap{
+  min-height:100%;
+  display:grid;
+  place-items:center;
+  padding:24px;
+}
+
+.card{
+  width:min(92vw, 520px);
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px 24px;
+}
+
+.title{
+  margin:0 0 14px;
+  font-size:1.6rem;
+  color:var(--brand);
+  letter-spacing:.2px;
+}
+
+.form{
+  display:grid;
+  gap:14px;
+}
+
+.field{
+  display:grid;
+  gap:6px;
+}
+
+label{
+  font-weight:600;
+  font-size:.95rem;
+  color:#7a1111; /* nice contrast with brand */
+}
+
+input[type="text"]{
+  width:100%;
+  padding:12px 12px;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  font:inherit;
+  outline:0;
+  background:#fff;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+input[type="text"]:focus{
+  border-color:#c7d2fe;
+  box-shadow: var(--ring);
+}
+
+.btn{
+  margin-top:4px;
+  appearance:none;
+  border:0;
+  background:var(--brand);
+  color:#fff;
+  font-weight:700;
+  padding:12px 16px;
+  border-radius:10px;
+  cursor:pointer;
+  transition: transform .06s ease, filter .15s ease;
+}
+
+.btn:hover{ filter:brightness(1.05); }
+.btn:active{ transform: translateY(1px); }
+/* --- Books List (H2 + #book-list only) --- */
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+  color: #b31c1c; /* brand-ish accent */
+  letter-spacing: .2px;
+}
+
+#book-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+/* Empty state message when there are no <li> items */
+#book-list:empty::before {
+  content: "No books yet — add one above.";
+  display: block;
+  padding: 14px;
+  font-size: .95rem;
+  color: #6b7280;
+  background: #f9fafb;
+  border: 1px dashed #e5e7eb;
+  border-radius: 10px;
+}
+
+/* List items */
+#book-list li {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  transition: border-color .15s ease, transform .06s ease, box-shadow .15s ease;
+}
+
+#book-list li:hover {
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.06);
+}
+
+/* Title/author (works whether you use <strong>, <span>, or classes) */
+#book-list li strong,
+#book-list li .title {
+  font-weight: 700;
+  color: #0a1a24;
+}
+
+#book-list li em,
+#book-list li .author,
+#book-list li span.author {
+  font-style: normal;        /* keep normal style unless you want italics */
+  color: #6b7280;
+  font-size: .95rem;
+}
+
+/* Optional tiny badge for index numbers (if you add one) */
+#book-list li .index {
+  display: inline-block;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+/* Delete button */
+.delete-btn{
+  appearance: none;
+  border: 1px solid #b91c1c;
+  background: #dc2626;            /* red */
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(0,0,0,.12) inset, 0 6px 12px rgba(220,38,38,.15);
+  transition: transform .06s ease, filter .15s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.delete-btn:hover{
+  filter: brightness(1.05);
+}
+
+.delete-btn:active{
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 rgba(0,0,0,.2) inset, 0 3px 6px rgba(0,0,0,.12);
+}
+
+.delete-btn:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(252,165,165,.55), 0 0 0 6px rgba(0,0,0,.04); /* accessible focus ring */
+}
+
+.delete-btn:disabled{
+  opacity: .6;
+  cursor: not-allowed;
+  filter: grayscale(.2);
+}
+
+/* Optional: if you add an icon inside the button later */
+.delete-btn .icon{
+  width: 1em;
+  height: 1em;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: -2px;
+}
+
+
+
+
+
+/* small screens look great already; minor tweak for very narrow ones */
+@media (max-width: 360px){
+  .title{ font-size:1.4rem; }
+}

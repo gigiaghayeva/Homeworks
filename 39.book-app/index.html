@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add a Book</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1 class="title">Add a Book</h1>
+
+      <form id="form" action="#" method="post" autocomplete="off">
+        <div class="field">
+          <label for="title">Book name</label>
+          <input
+            id="book"
+            name="book"
+            type="text"
+
+            placeholder="e.g., Atomic Habits"
+            required
+            minlength="2"
+            autofocus
+          />
+        </div>
+
+        <div class="field">
+          <label for="author">Author name</label>
+          <input
+            id="author"
+            name="author"
+            type="text"
+            placeholder="e.g., James Clear"
+            required
+            minlength="2"
+          />
+        </div>
+
+        <button class="btn" type="submit">Add :D</button>
+      </form>
+      <H2>Books List</H2>
+      <ul id="book-list"></ul>
+    </section>
+
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="index.js"></script>
+</body>
+</html>

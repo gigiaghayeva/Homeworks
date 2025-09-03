@@ -1,0 +1,39 @@
+{
+  "blogs": [
+    {
+      "id": "de26",
+      "title": "Hello",
+      "body": "Hello WORLD",
+      "author": "Ipsum",
+      "createdAt": "2025-08-26T15:14:21.030Z"
+    },
+    {
+      "id": "70fd",
+      "title": "Coding for beginner",
+      "body": "Starting your coding journey can feel overwhelming, but with practice and consistency, anyone can learn programming. Break problems into small steps and keep experimenting.",
+      "author": "Dolor",
+      "createdAt": "2025-08-26T15:40:11.846Z"
+    },
+    {
+      "id": "204f",
+      "title": "The Rise of Remote Work",
+      "body": "Remote work has transformed the modern workplace. More people now prefer flexibility and the ability to work from anywhere, creating opportunities and challenges for businesses.",
+      "author": "Ipsum",
+      "createdAt": "2025-08-26T17:55:30.097Z"
+    },
+    {
+      "id": "e223",
+      "title": "Travel Guide: Exploring Baku",
+      "body": "Baku, the capital of Azerbaijan, offers a unique mix of modern architecture and ancient history. From the Flame Towers to the Old City, there’s so much to see.",
+      "author": "Dolor",
+      "createdAt": "2025-08-26T18:05:16.916Z"
+    },
+    {
+      "id": "d545",
+      "title": "Learning to Code as a Beginner",
+      "body": "Starting your coding journey can feel overwhelming, but with practice and consistency, anyone can learn programming. Break problems into small steps and keep experimenting.",
+      "author": "Gunay",
+      "createdAt": "2025-08-26T18:07:26.699Z"
+    }
+  ]
+}

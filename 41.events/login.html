@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+
+   
+       <div id="login-page">
+  <div id="login-form">
+    <div class="login-header">
+      <h1>Welcome Back</h1>
+      <p>Please sign in to your account</p>
+    </div>
+
+    <form  id="lgn-form">
+      <div class="input-group">
+        <input type="email" placeholder="Email address" required class="email">
+      </div>
+
+      <div class="input-group password-group">
+        <input type="password" id="password" placeholder="Password" required>
+        <span class="toggle" onclick="togglePassword()">👁</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Login</button>
+       <p id="msg" style="color:#d00; margin-top:8px;"></p>
+    </form>
+
+    <div class="login-footer">
+      <p>Don’t have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="login.js" type="module"></script>
+
+    
+</body>
+</html>

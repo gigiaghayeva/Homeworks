@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Blog Website</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f5f6f8;
+      --card:#ffffff;
+      --ink:#0a1a24;
+      --muted:#6b7280;
+      --link:#0e7c86;
+      --link-dark:#065f66;
+      --danger:#8b0f0f;
+      --danger-ink:#fff5f5;
+      --warn:#f59e0b;
+      --warn-ink:#231a00;
+      --radius:14px;
+      --shadow:0 10px 18px rgba(12, 17, 29, .25);
+      --shadow-soft:0 4px 10px rgba(12, 17, 29, .18);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+
+    /* Top bar */
+    .topbar{
+      max-width:1100px;
+      margin:32px auto 8px;
+      padding:0 20px;
+      display:flex;
+      align-items:center;
+      gap:20px;
+      justify-content:space-between;
+    }
+    .brand{
+      font-family:Merriweather, Georgia, "Times New Roman", serif;
+      font-size:22px;
+      color:#b31c1c;
+      letter-spacing:.2px;
+      margin:0;
+    }
+    .nav{display:flex; gap:16px; align-items:center; font-size:14px; color:#444;}
+    .nav a{opacity:.85}
+    .nav a:hover{opacity:1}
+
+    /* Layout */
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:20px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:28px;
+    }
+    @media (max-width:1000px){ .grid{grid-template-columns:repeat(3,1fr);} }
+    @media (max-width:760px){  .grid{grid-template-columns:repeat(2,1fr);} }
+    @media (max-width:520px){  .grid{grid-template-columns:1fr;} }
+
+    /* Card */
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px 22px 18px;
+      position:relative;
+    }
+    .card:hover{ box-shadow:var(--shadow-soft); transform:translateY(-1px); transition:box-shadow .2s, transform .2s; }
+
+    .card .title{
+      font-family:Merriweather, Georgia, "Times New Roman", serif;
+      font-size:22px;
+      line-height:1.25;
+      letter-spacing:.2px;
+      margin:0 0 12px;
+      color:#0b1620;
+    }
+
+    .excerpt{
+      margin:0 0 14px;
+      font-weight:600;
+      color:#7a1111;
+    }
+    .excerpt .more{
+      color:var(--link);
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .excerpt .more:hover{ color:var(--link-dark); }
+
+    .meta{ margin:6px 0 16px; color:var(--muted); font-size:14px; }
+
+    .actions{ display:flex; gap:8px; align-items:center; }
+    .btn{
+      font:500 14px/1 Inter, system-ui, sans-serif;
+      padding:8px 12px;
+      border-radius:10px;
+      border:none;
+      cursor:pointer;
+      transition:transform .08s ease;
+      box-shadow:0 2px 0 rgba(0,0,0,.12) inset;
+    }
+    .btn:active{ transform:translateY(1px); }
+    .btn-danger{ background:var(--danger); color:var(--danger-ink); }
+    .btn-warn{ background:var(--warn); color:var(--warn-ink); }
+
+    /* small drop shadow strip under card */
+    .card::after{
+      content:"";
+      position:absolute;
+      left:10px; right:10px; bottom:-10px;
+      height:10px;
+      border-radius:0 0 var(--radius) var(--radius);
+      filter:blur(6px);
+      background:rgba(12,17,29,.35);
+      z-index:-1;
+    }
+
+    /* helpers */
+    .empty, .loading { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="brand">The Blog Website</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="newblog.html">New Blog</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <!-- JS will render cards into this container -->
+    <section id="posts" class="grid">
+      <p class="loading">Loading…</p>
+    </section>
+  </main>
+
+  <!-- axios CDN then your module -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="index.js"></script>
+  <script type="module" src="edit.js"></script>
+</body>
+</html>

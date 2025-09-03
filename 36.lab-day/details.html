@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suppliers Table</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  thead {
+    background: #14532d;
+    color: #fff;
+  }
+
+  thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tbody tr:nth-child(odd) {
+    background: #f1f5f9;
+  }
+
+  tbody tr:hover {
+    background: #e6f7ff;
+  }
+
+  .pill {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-size: 13px;
+  }
+
+  .link {
+    background: #e0f2fe;
+    border-color: #bae6fd;
+    color: #075985;
+  }
+
+  .link:hover {
+    background: #dbeafe;
+  }
+
+  .delete {
+    background: #fee2e2;
+    border-color: #fecaca;
+    color: #7f1d1d;
+  }
+
+  .delete:hover {
+    background: #fecaca;
+  }
+</style>
+</head>
+<body>
+       <header>
+        <div class="container">
+            <div class="logo">Supplier</div>
+            <div class="nav">
+                <ul>
+                    <a href="http://127.0.0.1:5500/index.html"">Home</a>
+                    <a href="http://127.0.0.1:5500/details.html">Supplier List</a>
+                    <a href="http://127.0.0.1:5500/supplier.html">Add Supplier</a>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+  <h2>Suppliers</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Company ID</th>
+        <th>Company Name</th>
+        <th>Contact Title</th>
+        <th>Country</th>
+        <th>Phone</th>
+        <th>Postal Code</th>
+        <th>Detail</th>
+        <th>Delete Supplier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Example empty row structure -->
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="#" class="pill link">Link to Supplier</a></td>
+        <td><a href="#" class="pill delete">Delete</a></td>
+      </tr>
+      <!-- Duplicate <tr> as needed -->
+    </tbody>
+  <script src="index.js"></script>
+</body>
+</html>
