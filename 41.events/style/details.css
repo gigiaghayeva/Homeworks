@@ -1,0 +1,31 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+#event-details {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#poster {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.card-body h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.list-group-item {
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}

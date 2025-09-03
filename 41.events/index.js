@@ -35,7 +35,7 @@ async function getEvents(){
           <div class="card-body">
             <h5 class="card-title">${evt.name}</h5>
             <p class="card-text">${evt.description}</p>
-            <a href="#" class="btn btn-primary">See Details</a>
+            <a href="details.html?id=${evt.id}" class="btn btn-primary">See Details</a>
           </div>
         </div>
       `;

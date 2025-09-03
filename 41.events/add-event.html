@@ -1,70 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Event</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style/adevent.css" />
 </head>
-<link rel="stylesheet" href="style/adevent.css">
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="index.html">GO BACK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container my-5">
     <form id="add-event-form">
-<input type="url" id="posterURL" placeholder="Poster Image URL" required>
-<img id="posterPreview" src="" alt="Poster Preview" style="display:none; margin:10px 0; border-radius:6px; max-width:100%; height:180px; object-fit:cover;">
-        <input type="text" id="name" placeholder="Event Name" required><br>
-        <input type="datetime-local" id="dateTime" required><br>
-        <input type="text" id="venueName" placeholder="Venue Name" required><br>
-        <input type="text" id="venueAddress" placeholder="Venue Adress" required><br>
-        <input type="number" id="venueCapacity" placeholder="Venue Capacity" required><br>
-        <input type="text" id="organizer" placeholder="Organizer" required><br>
-        <textarea id="description" placeholder="Event description"></textarea><br>
-        <input type="number" id="ticketsAvailable" placeholder="Ticket Available"required> <br>
+      <h1 class="text-center mb-4">Add New Event</h1>
 
-        <select id="category" required>
-    <option value="">Select Category</option>
-    <option value="Art">Art</option>
-    <option value="Music">Music</option>
-    <option value="Technology">Technology</option>
-    <option value="Business">Business</option>
-    <option value="Sports">Sports</option>
-  </select><br>
+      <input type="url" id="posterURL" placeholder="Poster Image URL" required>
+      <img id="posterPreview" src="" alt="Poster Preview" style="display:none">
 
-  <input type="number" id="price" placeholder="Ticket Price" required><br>
+      <input type="text" id="name" placeholder="Event Name" required>
+      <input type="datetime-local" id="dateTime" required>
+      <input type="text" id="venueName" placeholder="Venue Name" required>
+      <input type="text" id="venueAddress" placeholder="Venue Address" required>
+      <input type="number" id="venueCapacity" placeholder="Venue Capacity" required>
+      <input type="text" id="organizer" placeholder="Organizer" required>
+      <textarea id="description" placeholder="Event description"></textarea>
+      <input type="number" id="ticketsAvailable" placeholder="Tickets Available" required>
 
-  <select id="ageRestriction" required>
-    <option value="All Ages">All Ages</option>
-    <option value="16+">16+</option>
-    <option value="18+">18+</option>
-  </select><br>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Art">Art</option>
+        <option value="Music">Music</option>
+        <option value="Technology">Technology</option>
+        <option value="Business">Business</option>
+        <option value="Sports">Sports</option>
+      </select>
 
+      <input type="number" id="price" placeholder="Ticket Price" required>
 
-  <input type="text" id="duration" placeholder="Duration (e.g. 5 hours)" required><br>
+      <select id="ageRestriction" required>
+        <option value="All Ages">All Ages</option>
+        <option value="16+">16+</option>
+        <option value="18+">18+</option>
+      </select>
 
-  <input type="number" id="soldTickets" placeholder="Sold Tickets" ><br>
+      <input type="text" id="duration" placeholder="Duration (e.g. 5 hours)" required>
+      <input type="number" id="soldTickets" placeholder="Sold Tickets">
 
-  <button type="submit">Save Event</button>
-  <p id="msg"></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <button type="submit">Save Event</button>
+      <p id="msg"></p>
     </form>
-<script src="adevent.js"></script>    
+  </div>
+
+  <script src="adevent.js"></script>
 </body>
 </html>

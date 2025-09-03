@@ -85,6 +85,24 @@
       "duration": "2",
       "soldTickets": 15,
       "createdAt": "2025-09-02T15:56:31.208Z"
+    },
+    {
+      "id": "6c01",
+      "name": "Summer Beats Festival 2025",
+      "dateTime": "2025-09-21T11:46",
+      "venueName": "Caspian Seaside Arena",
+      "venueAddress": "Seaside Boulevard, Baku, Azerbaijan",
+      "venueCapacity": 5000,
+      "organizer": "\"Baku Music Live",
+      "description": "An unforgettable evening of live performances from top international DJs and local artists. Dance, enjoy food trucks, and celebrate the summer by the sea!",
+      "ticketsAvailable": 1200,
+      "category": "Music",
+      "price": 35,
+      "ageRestriction": "16+",
+      "posterURL": "https://images.pexels.com/photos/433452/pexels-photo-433452.jpeg",
+      "duration": "6 hours",
+      "soldTickets": 3800,
+      "createdAt": "2025-09-03T06:48:43.651Z"
     }
   ],
   "users": [
