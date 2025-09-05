@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tickets</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body><div class="flex min-h-screen bg-gray-100">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md">
+    <div class="p-6 font-bold text-purple-700 text-2xl">AdminPanel</div>
+    <nav class="mt-8">
+      <a href="#" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Dashboard</a>
+      <a href="users.html" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Users</a>
+      <a href="#" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Analytics</a>
+      <a href="tickets.html" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Tickets</a>
+      <a href="index.html" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Home</a>
+    </nav>
+  </aside>
+    
+
+<div class="container mx-auto my-10">
+  <h1 class="text-2xl font-bold mb-6">Tickets</h1>
+  
+  <div class="overflow-x-auto bg-white shadow rounded-lg">
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Ticket Code</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">User ID</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Event ID</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Quantity</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Price</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Purchase Date</th>
+          <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tickets-table-body" class="bg-white divide-y divide-gray-200">
+        <!-- JS will fill rows here -->
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+</div>
+
+<script src="tickets.js"></script>
+</body>
+</html>

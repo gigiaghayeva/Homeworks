@@ -30,13 +30,17 @@ async function onLogin(e) {
     }
 
     const user = users[0];
-    localStorage.setItem("currentUser", JSON.stringify(user)); // uncomment if you want auto-login
-
+    localStorage.setItem("currentUser", JSON.stringify(user)); 
+    if (user.role==="admin"){
+      window.location.href ="admin.html";
+    } else{
+    window.location.href="index.html"
+    }
     msgEl.style.color = "green";
     msgEl.textContent = "Login successful! Redirecting...";
 
     setTimeout(() => {
-      window.location.href = "index.html"; // ✅ only redirect if login successful
+      window.location.href = "index.html"; 
     }, 1000);
       } catch (error) {
     console.error(error);
