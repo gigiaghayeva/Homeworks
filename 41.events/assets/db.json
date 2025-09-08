@@ -236,6 +236,30 @@
       "password": "gunay123",
       "role": "client",
       "createdAt": "2025-09-02T07:51:40.223Z"
+    },
+    {
+      "fullName": "skylar",
+      "email": "skylar@gmail.com",
+      "password": "skylar123",
+      "role": "client",
+      "createdAt": "2025-09-06T12:12:06.632Z",
+      "id": "gh5qz5w"
+    },
+    {
+      "fullName": "john",
+      "email": "john@gmail.com",
+      "password": "john123",
+      "role": "client",
+      "createdAt": "2025-09-06T12:13:17.534Z",
+      "id": "EvXOCSM"
+    },
+    {
+      "fullName": "david",
+      "email": "david@gmail.com",
+      "password": "david123",
+      "role": "client",
+      "createdAt": "2025-09-06T12:18:23.637Z",
+      "id": "CwOpIPc"
     }
   ],
   "tickets": [
